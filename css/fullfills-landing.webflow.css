@@ -66,12 +66,12 @@
   background-clip: border-box;
   width: 100%;
   max-width: none;
-  height: 800px;
+  height: auto;
 }
 
 .hero {
   width: 100%;
-  height: 800px;
+  height: auto;
 }
 
 .image {
@@ -138,7 +138,8 @@
 
 .cta {
   color: #6cc49a;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .paragraph-2 {
@@ -148,10 +149,11 @@
 .info {
   opacity: 1;
   background-color: #0000;
-  background-image: url('../images/refillerypic.png');
+  background-image: url('../images/refillery.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
 }
 
 .info_wrap {
@@ -231,10 +233,10 @@
 .scrub {
   z-index: -99;
   text-align: left;
-  width: 20%;
+  width: 30%;
   transition: opacity .2s;
   position: absolute;
-  inset: 13.5% 0% auto auto;
+  inset: 13.5% -5% auto auto;
   transform: translate(0);
 }
 
@@ -255,9 +257,13 @@
 
 .dryer {
   z-index: -99;
-  width: 30%;
+  width: 25%;
   position: absolute;
-  inset: auto -5% -16.5% auto;
+  inset: 95% 0% auto auto;
+}
+
+.code-embed {
+  height: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -309,6 +315,14 @@
   .survey_wrap {
     align-items: center;
   }
+
+  .bottle {
+    top: 40%;
+  }
+
+  .dryer {
+    inset: 110% 0% auto auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -339,6 +353,10 @@
   .bottle {
     top: 50%;
   }
+
+  .dryer {
+    top: 118%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -363,12 +381,17 @@
     margin-bottom: auto;
   }
 
+  .cta {
+    margin-top: 20px;
+  }
+
   .bottle {
     top: 64%;
   }
 
   .dryer {
-    inset: auto 0% -31% auto;
+    display: none;
+    inset: auto 0% auto auto;
   }
 }
 
