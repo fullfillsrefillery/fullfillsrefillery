@@ -139,7 +139,8 @@
 .cta {
   color: #6cc49a;
   margin-top: 40px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .paragraph-2 {
@@ -321,7 +322,7 @@
   }
 
   .dryer {
-    inset: 110% 0% auto auto;
+    inset: 117% 0% auto auto;
   }
 }
 
@@ -355,7 +356,7 @@
   }
 
   .dryer {
-    top: 118%;
+    top: 128%;
   }
 }
 
